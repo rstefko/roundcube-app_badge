@@ -1,0 +1,3 @@
+<?php
+// Mailbox whose unseen messages are reflected in the application badge.
+$config['folder'] = 'INBOX';

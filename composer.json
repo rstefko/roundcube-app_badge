@@ -1,0 +1,7 @@
+{
+    "name": "roundcube/app_badge",
+    "type": "roundcube-plugin",
+    "description": "Sets the browser application badge to the number of unseen messages",
+    "license": "GPL-3.0-or-later",
+    "version": "1.0.0"
+}
