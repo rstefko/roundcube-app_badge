@@ -4,6 +4,8 @@ A small Roundcube plugin that mirrors the unread count in Roundcube's window tit
 
 ![app_badge](app_badge.png)
 
+The plugin requires a working manifest.json, to be able to install it as PWA app. Roundcube currently does not support it by default. See my [pull request](https://github.com/roundcube/roundcubemail/pull/9014) for details.
+
 ## Installation
 
 1. Copy the `app_badge` directory into your Roundcube `plugins/` directory.
