@@ -33,10 +33,18 @@
     }
 
     rcmail.addEventListener('init', function () {
-        rcmail.register_command('plugin.app_badge_update', function (count) {
-            updateBadge(count);
-        }, true);
+        function syncBadge() {
+            var match = document.title.match(/^\(([0-9]+)\)\s+/);
+            updateBadge(match ? match[1] : 0);
+        }
 
-        updateBadge(rcmail.env.app_badge_count || 0);
+        var observer = new MutationObserver(syncBadge);
+        observer.observe(document.head, {
+            childList: true,
+            characterData: true,
+            subtree: true
+        });
+
+        syncBadge();
     });
 })();
