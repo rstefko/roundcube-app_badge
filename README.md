@@ -2,6 +2,8 @@
 
 A small Roundcube plugin that mirrors the unread count in Roundcube's window title in the browser/PWA application badge. It uses the browser Badging API (`navigator.setAppBadge()` / `navigator.clearAppBadge()`).
 
+![app_badge](app_badge.png)
+
 ## Installation
 
 1. Copy the `app_badge` directory into your Roundcube `plugins/` directory.
